@@ -446,5 +446,5 @@ footer > p {
 
   .feature:nth-child(1) {
     grid-column-start: 2;
-  }
+  }   
 }
