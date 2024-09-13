@@ -1,5 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href=".\assets\letter-z.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>My product Landing website | in vanilla html css </title>
+  </head>
+  <body>
+    <header>
+      <nav class="grid-main topnav">
+        <a href="">
+          <img
+            src="/assets/shared/logo.svg"
+            width="40"
+            height="40"
+            alt="Typing Tornado"
+        /></a>
+        <button class="button blue">Pre-Access now</button>
+      </nav>
+    </header>
+    <main>
+      <section class="grid-main hero">
+        <div class="hero-text">
+          <h1 class="headline">Typing Tornado</h1>
+          <p class="description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Blanditiis aut fugit quasi eveniet mollitia ullam quo harum.
+          <button class="button orange">Pre Access now</button>
+          <p class="info"><strong class="caps">Outdate on 14/24</strong></p>
+        </div>
+
+        <picture class="hero-image">
+          <source
+            media="(width >= 75em)"
+            srcset=".\assets\letter-z.png"
+          />
+          <source
+            media="(width >= 43.75em)"
+            srcset=".\assets\letter-z.png" 
+          />
+          <img
+            src=".\assets\letter-z.png"
+            alt="mechanical keyboard"
+            width="1080"
+            height="960"
+          />
+        </picture>
+
+        <div class="gray-block"></div>
+      </section>
+      <section class="grid-main details">
+        <div class="gray-block"></div>
+
+        <picture class="details-image">
+          <source
+            media="(width >= 75em)"
+            srcset="/assets/desktop/image-phone-and-keyboard.jpg"
+          />
+          <source
+            media="(width >= 43.75em)"
+            srcset="/assets/tablet/image-phone-and-keyboard.jpg"
+          />
+          <img
+            src="/assets/mobile/image-phone-and-keyboard.jpg"
+            alt="phone and keyboard"
+            width="744"
+            height="662"
+          />
+        </picture>
+
+        <picture class="details-image">
+          <source
+            media="(width >= 75em)"
+            srcset="/assets/desktop/image-glass-and-keyboard.jpg"
+          />
+          <source
+            media="(width >= 43.75em)"
+            srcset="/assets/tablet/image-glass-and-keyboard.jpg"
+          />
+          <img
+            src="/assets/mobile/image-glass-and-keyboard.jpg"
+            alt="mechanical keyboard"
+            width="440"
+            height="386"
+          />
+        </picture>
+
+        <div class="details-text">
+          <h2 class="headline">Automatic modern keyboard</h2>
+          <p class="description small">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Quisquam dolores quo cumque nobis magnam, veritatis fuga minus 
+            beatae. Veritatis voluptatum recusandae suscipit.
+          </p>
+        </div>
+      </section>
+      <section class="grid-main features">
+        <div class="feature">
+          <div class="icon">
+            <img
+              src="/assets/shared/icon-compatible.svg"
+              alt=""
+              width="32"
+              height="32"
+            />
+          </div>
+          <h3>Extremely Cohesive</h3>
+          <p class="small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium explicabo nisi qui repudiandae quasi ratione 
+            facere animi,!.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="icon">
+            <img
+              src="/assets/shared/icon-bluetooth.svg"
+              alt=""
+              width="32"
+              height="32"
+            />
+          </div>
+          <h3>Untethered with bluetooth</h3>
+          <p class="small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ex nesciunt soluta similique nobis, commodi architecto.
+            Est suscipit neque labore sed minus nostrum culpa deleniti..
+          </p>
+        </div>
+        <div class="feature">
+          <div class="icon">
+            <img
+              src="/assets/shared/icon-battery.svg"
+              alt=""
+              width="32"
+              height="32"
+            />
+          </div>
+          <h3>Power Packed battery</h3>
+          <p class="small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Et deserunt unde, rerum consectetur magni commodi!
+            Mollitia quae ipsa repellat expedita, repellendus aliquam! Excepturi?.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="icon">
+            <img
+              src="/assets/shared/icon-light.svg"
+              alt=""
+              width="32"
+              height="32"
+            />
+          </div>
+          <h3>RGB Enlighten modes</h3>
+          <p class="small">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Unde aliquam temporibus molestias illum assumenda
+              nam, harum natus ratione recusandae fugit aperiam..
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><strong>Typing Tornado 2024</strong> | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +198,7 @@
 </head>
 <body>
 <header class="main-section">
-  <!-- navigation section  -->   
+     
    <nav class="main-content mynav">
       <a href="#">
         <img 
@@ -22,19 +210,31 @@
       <button class="button blue">Pre Access now</button>
    </nav>
 </header>
-<!-- main body section  -->
+
 <main>
   <section class="main-section hero">
-    <div class="main-content">
+   
 
-    </div>
+      <div class="left-section">
+        <h1>Typing Tornado</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab tempore consequatur numquam laboriosam nobis! experience matters a experience</p>
+      </div>
+        <div>
+         <button class="button orange">Pre Access now</button>
+          <p><strong class="caps">Outdate on 14/24</strong></p>
+        </div>
+   
+    <img src=".\assets\blue-keyboard-with-bright-lights.png" alt="modern keyboard" 
+    class="right"
+    width="1080"
+    height="960">
+    <div class="gray-block"> </div>
 
   </section>
 
 </main>
-<!-- footer section-->
 <footer>
 
 </footer>
 </body>
-</html>
+</html> -->
