@@ -175,7 +175,24 @@ button:hover {
   transition-property: background-color, color;
   
 }
+a.smooth{
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
 
+img.anim{
+  animation: come 5s ease forwards;
+}
+@keyframes come{
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .button.blue {
   background-color: var(--gray-lt);
   color: var(--blue);
@@ -268,7 +285,7 @@ picture.flush-right {
   display: none;
   height: 240px;
   border-radius: 20px 0 0 20px;
-  background-color: var(--gray-lt);
+  background-color: var(--bluecol,--orange);
 }
 
 .details {
