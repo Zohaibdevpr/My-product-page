@@ -80,6 +80,8 @@ h3 {
   text-transform: uppercase;
 }
 
+
+
 h1 {
   font-size: 3rem;
   color:var(--pink) ;
@@ -305,13 +307,16 @@ picture.flush-right {
 .hero-image img {
   height: 20.6875rem;
   object-position: left center;
-}
+} 
 
 .gray-block {
   display: none;
   height: 240px;
   border-radius: 20px 0 0 20px;
-  background-color: var(--bluecol,--orange);
+  background-color: #e28cb3; 
+  filter: drop-shadow(0 0 7px var(--orange-lt));
+  
+ 
 }
 
 .details {
