@@ -588,7 +588,18 @@ ul {
   ul { 
     grid-auto-flow: column;
   }
+  
+
 }
+/* @media (width < 31.25em)
+{
+  img.foot{
+    display: flex;
+    justify-content: flex-start;
+    align-items: first baseline;
+    margin: -170%;
+  }
+} */
 
 
 a.links {
@@ -636,26 +647,15 @@ img.social{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-  }
+  }   
     h4{
       font-size: 1.3rem;
       text-align: center;
       margin-left:-45px;
       margin-top: 4px;
     }
-    .foot{
-      width: 20px;
-    }
-    .brand{
-      position: relative;
-      width: 100%;
-    }
-    a.move{
-     position: absolute;
-     top: 25%;
-     left: 4%;
-
-    }
+   
+    
   }
 
 .footer{
@@ -681,8 +681,8 @@ h4{
 }
 a.move{
   position:absolute ;
-  top:83% ;
-  left: 35%;
+  top:33%;
+  left: 5%;
 }
 @keyframes wave {
   0%,
