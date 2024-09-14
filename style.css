@@ -211,9 +211,13 @@ img.anim{
   }
 }
 .button.blue {
-  background-color: var(--gray-lt);
-  color: var(--blue);
+  background-color: var(--gray-lt); */
+   color: var(--blue);
   animation: pop 1s ease forwards ;
+  border-radius:7px 24px 7px ;
+  filter: drop-shadow(0 0 5px var(--blue-lt));
+  
+
 }
 
 .button.blue:hover {
@@ -226,6 +230,8 @@ img.anim{
   color: var(--white);
   margin-top: 8px;
   animation: go 1s ease forwards ;
+  border-radius:7px 24px 7px ;
+  filter: drop-shadow(0 0 5px var(--orange-lt));
 }
 
 .button.orange:hover {
@@ -236,6 +242,7 @@ img.anim{
 picture {
   border-radius: 20px;
   overflow: hidden;
+  filter: drop-shadow(0 0 4px var(--white));
 }
 
 picture.flush-left {
@@ -420,6 +427,7 @@ cursor: pointer;
   text-align: center;
   padding-block-start: var(--space-lg);
   position: relative;
+ 
 }
 
 .brand > p.two {
@@ -628,8 +636,8 @@ p.para{
 }
 img.social{
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 
 }
 
@@ -660,12 +668,23 @@ img.social{
 
 .footer{
   display: flex;
-min-height: 40vh;
+min-height: 30vh;
   width: 100%;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
+
+
+
+  
+  font-size: 0.8em;
+  background-color: #222;
+  background-image: linear-gradient(25deg, transparent 65%, #1474b8, transparent 70%), linear-gradient(-25deg, transparent 65%, #1474b8, transparent 70%), linear-gradient(-25deg, transparent 30%, #1474b8, transparent 35%), linear-gradient(25deg, transparent 30%, #1474b8, transparent 35%), linear-gradient(65deg, transparent 65%, #1474b8, transparent 70%), linear-gradient(-65deg, transparent 65%, #1474b8, transparent 70%), linear-gradient(-65deg, transparent 30%, #1474b8, transparent 35%), linear-gradient(65deg, transparent 30%, #1474b8, transparent 35%);
+  background-size: 5em 2em, 5em 2em, 5em 2em, 5em 2em, 2em 5em, 2em 5em, 2em 5em, 2em 5em;
   line-height: 1.2;
   font-family: 'Poppins', sans-serif;
   position: relative;
+  
+  border-radius:7px 24px 7px ;
+  filter: drop-shadow(0 0 5px var(--blue-lt));
 }
 h4{
   font-size:1.6rem ;
@@ -677,12 +696,12 @@ h4{
   color: var(--orange-lt);
 }
 .foot{
-  width: 35px;
+  width: 50px;
 }
 a.move{
   position:absolute ;
   top:33%;
-  left: 5%;
+  left: 19%;
 }
 @keyframes wave {
   0%,
@@ -695,4 +714,75 @@ a.move{
   75% {
     transform: rotate(-15deg);
   }
+}
+
+
+
+
+
+#patt1 path {
+  stroke: #ff509e;
+}
+
+#patt2 path {
+  stroke: #95d13c;
+}
+
+#patt3 path {
+  stroke: #00b6cb;
+}
+
+#patt4 path {
+  stroke: #9753e1;
+}
+
+#mask1 rect {
+  -webkit-animation: pulse 1.90476s infinite;
+          animation: pulse 1.90476s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#mask2 rect {
+  x: 10;
+  -webkit-animation: pulse 1.90476s infinite 0.47619s;
+          animation: pulse 1.90476s infinite 0.47619s;
+  -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#squiggle1, #squiggle2, #squiggle3, #squiggle4 {
+  background-blend-mode: multiply;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    x: 10;
+  }
+  50% {
+    x: -20;
+  }
+  100% {
+    x: -50;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    x: 10;
+  }
+  50% {
+    x: -20;
+  }
+  100% {
+    x: -50;
+  }
+}
+
+svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
 }
