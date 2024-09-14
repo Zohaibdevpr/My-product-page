@@ -39,6 +39,7 @@
   --space-lg: 120px;
   --bluecol:#4e69ff;
   --pink:#e28cb3;
+  --navy:#6c81f5;
 }
 
 /* scrollbar  */
@@ -281,6 +282,9 @@ picture.flush-right {
   row-gap: var(--space-med);
 }
 
+h2.headline{
+  color: var(--navy);
+}
 .hero-text {
   grid-column: 2 / -2;
   display: grid;
@@ -428,6 +432,7 @@ cursor: pointer;
 
 .feature h3 {
   margin-block-end: 24px;
+  color: var(--navy);
 }
 
 .brand {
