@@ -419,6 +419,7 @@ cursor: pointer;
 .brand {
   text-align: center;
   padding-block-start: var(--space-lg);
+  position: relative;
 }
 
 .brand > p.two {
@@ -574,11 +575,10 @@ cursor: pointer;
 
 /* footer section  */
 
-
 ul {
   display: inline-grid;
   grid-auto-flow: row;
-  grid-gap: 20px;
+  grid-gap: 25px;
   justify-items: center;
   margin: auto;
   text-decoration: none;
@@ -594,7 +594,7 @@ ul {
 a.links {
   color: white;
   text-decoration: none;
-  margin: 3rem;
+  /* margin: 1rem; */
   box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
 }
 
@@ -613,18 +613,77 @@ li:hover ~ li p.para{
 }
 p.para{
    font-size: 2rem;
+   text-shadow: 0 0 25px rgb(226, 45, 45);
 }
+img.social{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+
+}
+
+@media (width > 22em){
+  .footer{
+    display: flex;
+    justify-content: space-around;
+  }
+  img.social{
+    width: 25px;
+    height: 25px;
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+    h4{
+      font-size: 1.3rem;
+      text-align: center;
+      margin-left:-45px;
+      margin-top: 4px;
+    }
+    .foot{
+      width: 20px;
+    }
+    .brand{
+      position: relative;
+      width: 100%;
+    }
+    a.move{
+     position: absolute;
+     top: 25%;
+     left: 4%;
+
+    }
+  }
 
 .footer{
   display: flex;
-  height: 30vh;
+min-height: 40vh;
   width: 100%;
   background-color: var(--blue);
-  line-height: 1.3;
+  line-height: 1.2;
   font-family: 'Poppins', sans-serif;
-  
+  position: relative;
 }
-
+h4{
+  font-size:1.6rem ;
+  text-align: center;
+  position: absolute;
+  top: 3%;
+  left: 44%;
+  
+  color: var(--orange-lt);
+}
+.foot{
+  width: 35px;
+}
+a.move{
+  position:absolute ;
+  top:83% ;
+  left: 35%;
+}
 @keyframes wave {
   0%,
   100% {
