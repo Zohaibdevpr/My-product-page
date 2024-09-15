@@ -280,7 +280,7 @@ picture.flush-right {
 .hero {
   padding-block: var(--space-med) var(--space-sm);
   row-gap: var(--space-med);
-}
+}  
   
 h2.headline{
   color: var(--navy);
